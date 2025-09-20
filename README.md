@@ -1,6 +1,6 @@
 # Intro to Godot 4
 
-[![Godot Engine](https://img.shields.io/badge/Godot-4.0-blue?logo=godot-engine&logoColor=white)](https://godotengine.org/)
+[![Godot Engine](https://img.shields.io/badge/Godot-4.5-blue?logo=godot-engine&logoColor=white)](https://godotengine.org/)
 [![YouTube Course](https://img.shields.io/badge/Clean%20Code%20Course-Watch%20Now-red?logo=youtube)](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2)
 
 Welcome to **Intro to Godot 4**!  
