@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=4 uid="uid://bwrh4e5q6yfip"]
+
+[ext_resource type="TileSet" uid="uid://chruw07xbdfi1" path="res://tileset/house_tiles.tres" id="1_dqu3f"]
+[ext_resource type="Script" uid="uid://bjfnxk0e7x0w" path="res://scenes/houses/house.gd" id="1_wmlim"]
+[ext_resource type="PackedScene" uid="uid://coe44xlr1v1oy" path="res://scenes/objects/simple_light.tscn" id="2_b1fwh"]
+[ext_resource type="PackedScene" uid="uid://ckrqyh7n2vmvs" path="res://scenes/objects/wall_lamp.tscn" id="3_nwqdy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqu3f"]
+size = Vector2(3275, 2095.5)
+
+[node name="House" type="Area2D"]
+collision_layer = 16
+script = ExtResource("1_wmlim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1369.5, -392.75)
+shape = SubResource("RectangleShape2D_dqu3f")
+
+[node name="Floor" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAP//AQABAAEAAAABAP//AQABAAEAAAACAP//AQABAAEAAAADAP//AQABAAEAAAAEAP//AQABAAEAAAAFAP//AQABAAEAAAAGAP//AQABAAEAAAAGAP7/AQABAAEAAAAFAP7/AQABAAEAAAAEAP7/AQABAAEAAAADAP7/AQABAAEAAAACAP7/AQABAAEAAAABAP7/AQABAAEAAAAAAP7/AQABAAEAAAAAAP3/AQABAAEAAAABAP3/AQABAAEAAAACAP3/AQABAAEAAAADAP3/AQABAAEAAAAEAP3/AQABAAEAAAAFAP3/AQABAAEAAAAGAP3/AQABAAEAAAAGAAAAAQABAAEAAAAFAAAAAQABAAEAAAAEAAAAAQABAAEAAAADAAAAAQABAAEAAAACAAAAAQABAAEAAAABAAAAAQABAAEAAAAAAAAAAQABAAEAAAD/////AQAAAAEAAAD///7/AQAAAAEAAAD///3/AQAAAAEAAAD//wAAAQAAAAEAAAD///z/AQAAAAAAAAD//wEAAQAAAAIAAAAHAAEAAQACAAIAAAAHAPz/AQACAAAAAAAAAAEAAQABAAIAAAABAAEAAQABAAIAAAACAAEAAQABAAIAAAADAAEAAQABAAIAAAAEAAEAAQABAAIAAAAFAAEAAQACAAQAAAAGAAEAAQACAAQAAAAHAAAAAQACAAEAAAAHAP//AQACAAEAAAAHAP7/AQACAAEAAAAHAP3/AQACAAEAAAAGAPz/AQABAAAAAAAFAPz/AQABAAAAAAAEAPz/AQABAAAAAAADAPz/AQABAAAAAAACAPz/AQABAAAAAAABAPz/AQABAAAAAAAAAPz/AQABAAAAAAA=")
+tile_set = ExtResource("1_dqu3f")
+
+[node name="Outer Walls" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD//wAAAQADAAEAAAD/////AQADAAEAAAD///7/AQADAAEAAAD///3/AQADAAEAAAD///z/AQADAAAAAAABAPz/AQAEAAAAAAACAPz/AQAEAAAAAAADAPz/AQAEAAAAAAAEAPz/AQAEAAAAAAAFAPz/AQAEAAAAAAAGAPz/AQAEAAAAAAAAAPz/AQAEAAAAAAAHAPz/AQAFAAAAAAAHAP3/AQAFAAEAAAAHAP7/AQAFAAEAAAAHAP//AQAFAAEAAAAHAAAAAQAFAAEAAAAHAAEAAQAFAAIAAAAEAAEAAQAEAAIAAAADAAEAAQAEAAIAAAACAAEAAQAEAAIAAAABAAEAAQAEAAIAAAAAAAEAAQAEAAIAAAD//wEAAQADAAIAAAAFAAEAAQAGAAMAAAAGAAEAAQAGAAQAAAA=")
+tile_set = ExtResource("1_dqu3f")
+
+[node name="Inner Walls" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAEAAEAAQAFAAgAAAAEAP//AQADAAcAAAADAP//AQAAAAYAAAACAP//AQAAAAYAAAABAP//AQAAAAYAAAAAAP//AQAAAAYAAAD/////AQAEAAcAAAAEAPz/AQAFAAYAAAAEAP3/AQABAAYAAAA=")
+tile_set = ExtResource("1_dqu3f")
+
+[node name="SimpleLight" parent="." instance=ExtResource("2_b1fwh")]
+position = Vector2(2836, 5)
+rotation = 1.5707941
+
+[node name="WallLamp" parent="." instance=ExtResource("3_nwqdy")]
+position = Vector2(2314, -1221)
+rotation = 3.1415882
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

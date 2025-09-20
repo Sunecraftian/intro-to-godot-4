@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcu2klwwbmq70"]
+
+[ext_resource type="Script" uid="uid://djqo62veahbql" path="res://scenes/objects/gate.gd" id="1_33swo"]
+[ext_resource type="Texture2D" uid="uid://bu0p3ayws0nbb" path="res://graphics/objects/gate.png" id="1_q0w5n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2cq8"]
+size = Vector2(834, 84.5)
+
+[node name="Gate" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 15
+script = ExtResource("1_33swo")
+
+[node name="Gate" type="Sprite2D" parent="."]
+position = Vector2(504, -542)
+texture = ExtResource("1_q0w5n")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(504, -542)
+polygon = PackedVector2Array(1560, -780, -1441, -780, -1441, 543.2, -1433, 585.4, -1433, 589.4, -1420, 623.4, -1420, 626.5, -1403, 656.4, -1403, 658.7, -1377, 691.6, -1377, 693.9, -1341, 726.9, -1341, 728.1, -1308, 749.1, -1308, 750.3, -1256, 771.3, -1256, 772.7, -1216.8, 780, -362.6, 780, -361, 777.6, -361, 711, 484, 711, 484, 777.8, 486.2, 780, 1343.4, 780, 1366.4, 775, 1370.4, 775, 1404.4, 762, 1407.5, 762, 1437.5, 745, 1439.7, 745, 1472.7, 719, 1474.9, 719, 1507.9, 683, 1509.1, 683, 1530.1, 650, 1531.3, 650, 1552.4, 598, 1553.6, 598, 1560, 565.5)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(567, 220.75)
+shape = SubResource("RectangleShape2D_b2cq8")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
