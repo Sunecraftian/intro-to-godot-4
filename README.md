@@ -1,16 +1,16 @@
 # Intro to Godot 4
 
 [![Godot Engine](https://img.shields.io/badge/Godot-4.5-blue?logo=godot-engine&logoColor=white)](https://godotengine.org/)
-[![YouTube Course](https://img.shields.io/badge/Clean%20Code%20Course-Watch%20Now-red?logo=youtube)](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2)
+[![YouTube Course](https://img.shields.io/badge/Clear%20Code%20Course-Watch%20Now-red?logo=youtube)](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2)
 
 Welcome to **Intro to Godot 4**!  
-This repository contains my hands-on results, code samples, and personal notes from following the outstanding [YouTube course by Clean Code](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2).
+This repository contains my hands-on results, code samples, and personal notes from following the outstanding [YouTube course by Clear Code](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2).
 
 ---
 
 ## 🚀 About the Course
 
-The [Clean Code "Intro to Godot 4" course](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2) is a thorough, beginner-friendly introduction to game development using the Godot 4 engine. The course walks through essential Godot concepts, GDScript fundamentals, scene organization, and practical game-building techniques—perfect for newcomers and experienced devs alike.
+The [Clear Code "Intro to Godot 4" course](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2) is a thorough, beginner-friendly introduction to game development using the Godot 4 engine. The course walks through essential Godot concepts, GDScript fundamentals, scene organization, and practical game-building techniques—perfect for newcomers and experienced devs alike.
 
 ---
 
@@ -57,9 +57,9 @@ The [Clean Code "Intro to Godot 4" course](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc2
 
 ## 📺 Original Course
 
-> [Intro to Godot 4 - Clean Code YouTube Course](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2)
+> [Intro to Godot 4 - Clear Code YouTube Course](https://youtu.be/nAh_Kx5Zh5Q?si=-Azc20t7uEROJCX2)
 
-All credit for the course content goes to Clean Code—this repo is my personal practice and extension of their excellent tutorial.
+All credit for the course content goes to Clear Code—this repo is my personal practice and extension of their excellent tutorial.
 
 ---
 
