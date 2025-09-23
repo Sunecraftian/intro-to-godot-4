@@ -63,12 +63,4 @@ All credit for the course content goes to Clear Code—this repo is my personal 
 
 ---
 
-## 🤝 Contributing
-
-Found a typo, or want to add your own solutions? PRs and issues are welcome!  
-If you’re also learning Godot 4, feel free to share your progress or open a discussion.
-
----
-
-
 Happy coding and gamedev! 🚀
